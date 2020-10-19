@@ -64,6 +64,7 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 Load balancing ensures that the application will be highly __resilient_and available__, in addition to restricting _attacks_and access___ to the network.
 What aspect of security do load balancers protect? 
 They protect application servers against DoS attacks, where the attacker will attempt to flood a network with access requests in order to take down a network.
+
 What is the advantage of a jump box?
 A jump box acts a a gateway router for the network, allowing connections from specific IP addresses and ports to forward to the virtual machines behind the jump box.
 
@@ -92,7 +93,8 @@ Only the Load Balancer_____ machine can accept connections from the Internet. Ac
 - 51.143.114.40
 
 Machines within the network can only be accessed by _SSH____.
-- Which machine did you allow to access your ELK VM? What was its IP address? - JumpBox, 10.0.1.9
+- Which machine did you allow to access your ELK VM? Jump Box
+- What was its IP address? - 10.0.1.9
 
 A summary of the access policies in place can be found in the table below.
 
@@ -108,14 +110,14 @@ A summary of the access policies in place can be found in the table below.
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- What is the main advantage of automating configuration with Ansible?_
-Allows a user to configure multiple VMs with one configuration file.
+- What is the main advantage of automating configuration with Ansible? Automating with Ansible allows a user to configure multiple VMs with one configuration file.
+
 The playbook implements the following tasks:
 - In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-  . install docker io
-  . install pip (python pip)
-  . install docker python module
-  . download and lauch docker ELK Stack
+  - install docker io
+  - install pip (python pip)
+  - install docker python module
+  - download and lauch docker ELK Stack
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
@@ -124,10 +126,10 @@ The following screenshot displays the result of running `docker ps` after succes
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 - 10.0.1.9
-  10.0.1.17
-  10.0.1.16
-  10.0.1.18
-  10.0.1.19
+- 10.0.1.17
+- 10.0.1.16
+- 10.0.1.18
+- 10.0.1.19
 
 We have installed the following Beats on these machines:
 - installed Filebeat and Metricbeat on ELK Stack VM (10.0.1.20)
