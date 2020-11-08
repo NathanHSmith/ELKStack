@@ -1,5 +1,5 @@
 # ELKStack
-BlackCherry
+Project Deployment
 
 ## Automated ELK Stack Deployment
 
