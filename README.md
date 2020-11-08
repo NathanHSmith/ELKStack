@@ -1,4 +1,4 @@
-# Gibson93
+# ELKStack
 BlackCherry
 
 ## Automated ELK Stack Deployment
